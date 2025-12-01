@@ -25,6 +25,11 @@ const db = getDatabase(app);
 
 // Newsletter subscription handler
 document.addEventListener('DOMContentLoaded', () => {
+    const venmoBtn = document.getElementById("venmo_btn");
+    venmoBtn.addEventListener("click", function() {
+        
+    });
+
     const submitBtn = document.querySelector('.newsletter-submit');
     if (!submitBtn) return;
     submitBtn.addEventListener('click', async (e) => {
